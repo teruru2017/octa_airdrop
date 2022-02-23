@@ -181,7 +181,7 @@ export default function Airdrop() {
   return (
     <Layout>
       
-    <div className="text-dark">
+    <div className="text-white">
     
       <h1>Airdrop</h1>
     </div>

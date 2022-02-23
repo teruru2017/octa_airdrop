@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Layout = ( {children} ) => {
   return (
   
-    <main className='bg-dark d-flex flex-column min-vh-100'>
+    <main className=' d-flex flex-column min-vh-100'>
     
       <Head>
         <title>OCTA</title>
@@ -17,7 +17,7 @@ const Layout = ( {children} ) => {
        
       
       <div className=" text-center ">
-       <img src="/n.jpg"  width={1900} height={400} />
+       
        {children}
         
       </div>

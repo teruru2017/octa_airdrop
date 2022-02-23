@@ -67,14 +67,12 @@ const WalletCard = () => {
             
 		
          <Link href="/">
-          <a className="navbar-brand">
-            <span className="fw-bold text-secondary text-warning">
+         
 				<img src="/logo.png" alt="" height={50}/>
+				</Link>
 
-				</span>
-          </a>
-        </Link>
-        <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ">
+				
+				<ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ">
           <li> <NavItem to='/airdrop'>Airdrop</NavItem> </li>
           <li> <NavItem to='/myinventory'>My Inventory</NavItem> </li>
           <li> <NavItem to='/marketplace'>Marketplace</NavItem> </li>
@@ -91,6 +89,9 @@ const WalletCard = () => {
 			{errorMessage}
             </button>
             </ul>
+      
+        
+       
         </div>
       
 	
