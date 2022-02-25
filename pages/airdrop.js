@@ -6,6 +6,7 @@ import axios from 'axios'
 import Web3Modal from 'web3modal'
 import { BscscanProvider } from "@ethers-ancillary/bsc";
 import NFTBox from '../contracts/THTESTNFT1155.json'
+import { Content } from "antd/lib/layout/layout";
 
 //import { BSC, BSCTestnet, Mainnet, DAppProvider } from '@usedapp/core'
 
@@ -179,14 +180,40 @@ export default function Airdrop() {
   }
 
   return (
-    <Layout>
-      
-    <div className="text-white">
     
+    <Layout>
+      <style jsx>
+        {`.main-content{
+          margin-top:80px 
+         
+        }`
+        }
+          </style>
+      <style jsx>
+        {`.img_container{
+        
+         position:absolute;
+         display:block;  
+           
+         height:100%;/* กำหนดความสูงส่วนของเนื้อหาที่นำมาซ้อนทับ แบบขยายเต็ม */
+         width:50px; /* กำหนดความกว้างของเนื้อหาที่นำมาซ้อนทับ */
+         top:80x; /* css กำหนดชิดด้านบน  */
+         left:630px; /* css กำหนดชิดซ้าย  */
+         
+        }`
+        }
+          </style>
+        
+    <div className="main-content text-white ">
+    <div className="img_container">
+      <img src="/Card_06.gif" alt="" height={310} width={200}/>
+      </div>
       <h1>Airdrop</h1>
+      
     </div>
     <div>
-      <div className="text-white"><h5>
+      
+      <div className="text-white ,"><h5>
         {userAddr === null
           ? "Address"
           : userAddr
@@ -238,9 +265,11 @@ export default function Airdrop() {
             </button>
           : ""
         }
+       
       </div>
-
+     
     </div>
+    
     </Layout>
   );
 

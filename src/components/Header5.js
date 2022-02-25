@@ -65,18 +65,20 @@ const WalletCard = () => {
         
 		<div className='walletCard'>
             
-		
+			
          <Link href="/">
-         
-				<img src="/logo.png" alt="" height={50}/>
-				</Link>
 
+				
+				<img src="/logo.png" alt="" height={50}/>
+				
+				</Link>
+				
 				
 				<ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 ">
           <li> <NavItem to='/airdrop'>Airdrop</NavItem> </li>
           <li> <NavItem to='/myinventory'>My Inventory</NavItem> </li>
           <li> <NavItem to='/marketplace'>Marketplace</NavItem> </li>
-          <button type="button" className="btn btn-outline-primary me-2 px-3 btn-sm" onClick={connectWalletHandler}>
+          <button type="button" className="connButtonTextbtn btn-outline-primary me-2 px-3 btn-sm" onClick={connectWalletHandler}>
           <span>Connect Wallet</span>
         {/* <h4> {"Connection to MetaMask using window.ethereum methods"} </h4> */}
 			{/* <button onClick={connectWalletHandler}>{connButtonText}</button> */}

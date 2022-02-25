@@ -1,12 +1,13 @@
 import Header from './Header5';
 import Footer from './Footer';
 import Head from 'next/head';
-import Image from 'next/image'
+
+
 
 const Layout = ( {children} ) => {
   return (
   
-    <main className=' d-flex flex-column min-vh-100'>
+    <main className=' d-flex flex-column min-vh-100 '>
     
       <Head>
         <title>OCTA</title>
@@ -16,7 +17,7 @@ const Layout = ( {children} ) => {
       <Header />
        
       
-      <div className=" text-center ">
+      <div className="content">
        
        {children}
         

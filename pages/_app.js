@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
+import "../styles/airdrop.css"
 import NextNprogress from "nextjs-progressbar";
 
 //import { useWeb3userContext, web3UserContext } from '../src/PavanGangireddy-nextjs-ether/context/useWeb3ProviderContext';
